@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chainstatelens"
+version = "0.1.0"
+description = "Block-pinned, read-only EVM state capture with deterministic replay"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+
+[project.scripts]
+chainstatelens = "chainstatelens.cli:main"
+
+[tool.setuptools.package-data]
+chainstatelens = ["data/*.json"]
