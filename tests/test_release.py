@@ -6,7 +6,7 @@ ROOT = pathlib.Path(__file__).parents[1]
 
 class ReleaseTests(unittest.TestCase):
     def test_required_files(self):
-        for path in ["README.md", "SUPPORT.md", "LICENSE", "CHANGELOG.md", "PROJECT_SPEC.md", "doit.sh", "run.sh"]:
+        for path in ["README.md", "SUPPORT.md", "LICENSE", "CHANGELOG.md", "PROJECT_SPEC.md", "install.sh", "run.sh"]:
             self.assertTrue((ROOT / path).is_file(), path)
 
     def test_funding_addresses_exact(self):
