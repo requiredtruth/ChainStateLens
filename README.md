@@ -3,7 +3,7 @@
 ChainStateLens answers a narrow reproducibility question: **what public account and storage state did an EVM JSON-RPC node return at these exact blocks, and can someone replay the evidence offline?**
 
 ```sh
-./doit.sh
+./install.sh
 ```
 
 That zero-dependency command runs the test suite, compiles every module, and replays bundled synthetic evidence. No RPC endpoint, wallet, key, token, or package download is needed.
