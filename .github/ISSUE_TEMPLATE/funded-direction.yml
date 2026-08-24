@@ -1,0 +1,28 @@
+name: Funded direction request
+description: Publicly prove a donation and request priority for a specific direction
+title: "[funded direction] "
+labels: ["funded-direction"]
+body:
+  - type: markdown
+    attributes:
+      value: Donations can request prioritization, but do not buy support, ownership, returns, or guaranteed implementation. The first valid public claim for a transaction hash is the claim considered.
+  - type: dropdown
+    id: asset
+    attributes:
+      label: Asset and network
+      options: [Bitcoin mainnet, Ethereum/EVM network, Dogecoin mainnet]
+    validations:
+      required: true
+  - type: input
+    id: hash
+    attributes:
+      label: Public transaction hash
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Requested direction
+      description: Describe a bounded, read-only feature and its verification criteria.
+    validations:
+      required: true
